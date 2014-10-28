@@ -1,0 +1,32 @@
+{
+  "name": "nux-ng",
+  "version": "0.0.1",
+  "ignore": [
+    "**/*.pdf"
+  ],
+  "dependencies": {
+    "neustar-nux": "ssh://git@git.nexgen.neustar.biz:8022/neustar/nux.git#a02e7f08ccddec935955d57aafe18f8511d4500d",
+    "neustar-angular-multiselect": "https://github.com/johnwun/angular-multi-select.git#master",
+    "ng-table": "~0.3.3"
+  },
+  "devDependencies": {},
+  "overrides": {
+    "angular-datepicker": {
+      "main": [
+        "./dist/index.js",
+        "./dist/index.css"
+      ]
+    },
+    "neustar-nux": {
+      "main": [
+        "./dist/css/nux.css"
+      ],
+      "ignore": [
+        "**/*.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "1.3.0-rc.4"
+  }
+}
